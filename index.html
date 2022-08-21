@@ -12,6 +12,12 @@
             href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
             rel="stylesheet"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <section class="first-navbar">
@@ -31,36 +37,55 @@
         <section class="second-navbar">
             <div class="left">
                 <img src="./assets/img/logo_amd.svg" />
-                <select name="Produtos">
-                    <option>Processadores</option>
-                    <option>Placas Gráficas</option>
-                    <option>Softwares</option>
-                </select>
-                <select name="Soluções">
-                    <option>Centro de Dados e Nuvem</option>
-                    <option>Computação de alto desempenho</option>
-                    <option>Jogos</option>
-                </select>
-                <select name="Loja">
-                    <option>Laptos</option>
-                    <option>Placas de Vídeo</option>
-                    <option>Motherboards</option>
-                </select>
-                <button>Unidades + Assistência</button>
+                <div class="dropdown">
+                    <button class="dropbtn">PRODUTOS</button>
+                    <div class="dropdown-content">
+                        <a href="#">PROCESSADORES</a>
+                        <a href="#">PLACAS GRÁFICAS</a>
+                        <a href="#">ACELERADORES</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">SOLUÇÕES</button>
+                    <div class="dropdown-content">
+                        <a href="#">JOGOS</a>
+                        <a href="#">PESSOAL</a>
+                        <a href="#">CENTRO DE DADOS E NUVEM</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">LOJA</button>
+                    <div class="dropdown-content">
+                        <a href="#">LAPTOPS</a>
+                        <a href="#">PLACAS DE VÍDEO</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="/">UNIDADES + ASSISTÊNCIA</a>
             </div>
 
             <div class="right">
                 <div class="search">
-                    <input type="text" />
+                    <input type="text" placeholder="Search" />
                     <img src="./assets/icons/search.svg" />
                 </div>
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </section>
 
         <section class="universe">
-            <img src="./assets/img/world.png" />
+            <div class="universe-img">
+                <img src="./assets/img/world.png" />
+            </div>
             <div class="universe-text">
-                <h1>juntos avançamos</h1>
+                <h1>
+                    juntos avançamos
+                    <span>_</span>
+                </h1>
                 <p>Os processadores mais avançados do mundo</p>
                 <p>Para as ideias mais ambiciosas do mundo</p>
                 <button>SAIBA MAIS</button>
