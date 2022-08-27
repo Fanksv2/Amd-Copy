@@ -313,19 +313,34 @@
     min-width: 200px;
 }
 
+.products > div button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
 .products img {
     height: auto;
     width: 100%;
 }
 
 @media (max-width: 1220px) {
+    body {
+        margin-top: 47px;
+    }
+
     .first-navbar {
         display: none;
     }
 
     .second-navbar {
         padding: 11px 20px;
-        border-bottom: 3px solid #ffffff;
+        border-bottom: 0px;
+
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
     }
 
     .second-navbar .left img {
@@ -346,6 +361,7 @@
     .universe {
         flex-direction: column;
         padding: 0px 15px;
+        border-top: 3px solid #ffffff;
     }
 
     .universe .universe-img {
@@ -373,6 +389,11 @@
 
     .universe .universe-text button {
         margin: 40px 0 35px 0;
+        padding: 10px 15px 10px 15px;
+    }
+
+    .universe .universe-text button:hover {
+        border: 2px solid transparent;
         padding: 10px 15px 10px 15px;
     }
 
